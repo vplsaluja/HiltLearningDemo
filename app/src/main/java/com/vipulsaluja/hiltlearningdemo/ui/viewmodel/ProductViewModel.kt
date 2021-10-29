@@ -1,5 +1,6 @@
 package com.vipulsaluja.hiltlearningdemo.ui.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -23,7 +24,7 @@ class ProductViewModel @Inject constructor(
 
     fun fetchProducts() {
         viewModelScope.launch {
-            productRepo.getProducts()
+            productList.value = productRepo.getProducts()
         }
     }
 

@@ -1,6 +1,7 @@
 package com.vipulsaluja.hiltlearningdemo.ui
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.ProgressBar
 import androidx.activity.ComponentActivity
@@ -32,7 +33,7 @@ class ProductListActivity : ComponentActivity() {
 
         mViewModel.getProductLiveData().observe(this, {
             progressBar.visibility = View.GONE
-            productAdapter::updateData
+            productAdapter.updateData(it)
         })
 
         progressBar.visibility = View.VISIBLE

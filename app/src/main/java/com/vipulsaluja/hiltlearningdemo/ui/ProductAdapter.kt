@@ -24,10 +24,9 @@ class ProductAdapter : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() 
     }
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
-        Log.e("Vipul","inside bind view holder")
         holder.txtName.text = listProduct[position].name
         holder.txtBrandName.text = listProduct[position].brand
-        holder.txtPrice.text = listProduct[position].price.toString()
+        holder.txtPrice.text = "$${listProduct[position].price}"
     }
 
     override fun getItemCount(): Int {
