@@ -18,8 +18,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 class ApplicationModule {
 
-//    private const val BASE_URL = "https://makeup-api.herokuapp.com/";
-
     @Provides
     fun getBaseUrl()= BASE_URL
 
