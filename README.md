@@ -12,3 +12,6 @@ MVVM with Live Data
 - Hilt for dependency injection
 - Retrofit and OkHttp for REST api communication
 - Kotlin coroutines
+
+For detail description you can follow the link:
+https://medium.com/@vipulsaluja/dependency-injection-in-android-with-hilt-4f93d7ec273
